@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-apollo-react-exm/data-access": ["libs/data-access/src/index.ts"],
+      "@nx-apollo-react-exm/feature-sets": ["libs/feature-sets/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
