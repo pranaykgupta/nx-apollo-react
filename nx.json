@@ -12,9 +12,12 @@
   "npmScope": "nx-apollo-react-exm",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "Y2I3ODExZmYtOGYzNC00YTU2LWExMmQtNTQyZTUyMzUxZGUxfHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
@@ -25,6 +28,9 @@
     "nx-apollo-e2e": {
       "tags": [],
       "implicitDependencies": ["nx-apollo"]
+    },
+    "api": {
+      "tags": []
     }
   }
 }
